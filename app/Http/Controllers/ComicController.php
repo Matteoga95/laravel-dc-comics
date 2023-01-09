@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Http\Requests\StoreComicRequest;
 use App\Models\Comic;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Validator;
 
 class ComicController extends Controller
 {
@@ -40,12 +41,13 @@ class ComicController extends Controller
     {
         // Validate data
         //dd($request);
+
         $val_data = $request->validated();
         //dd($val_data);
         // Save all data
         $Comic = Comic::create($val_data);
         // redirect to a get route
-        return to_route('admin.comics.index')->with('message', "$Comic->title added successfully");
+        return to_route('index')->with('message', "$Comic->title added successfully");
     }
 
     /**

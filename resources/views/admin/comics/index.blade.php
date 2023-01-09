@@ -25,12 +25,15 @@
             <tbody class="table-group-divider">
 
                 @forelse($comics_list as $comic)
-                <tr class="table-primary">
-                    <td><img src="{{$comic->thumb}}" alt=""></td>
+
+                <tr class="">
+                    <td class=""><img src="{{$comic->thumb}}" alt=""></td>
                     <td scope="row">{{$comic->title}}</td>
                     <td>{{$comic->description}}</td>
 
                 </tr>
+
+
                 @empty
                 <tr>
                     <td>
@@ -42,7 +45,7 @@
                 </tr>
 
 
-                @endforelse;
+                @endforelse
 
             </tbody>
             <tfoot>

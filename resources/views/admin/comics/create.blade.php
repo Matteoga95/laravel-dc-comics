@@ -16,10 +16,10 @@
                 characters</small>
         </div>
         <div class="mb-3">
-            <label for="src" class="form-label">ComicBook Image</label>
-            <input type="text" name="src" id="src" class="form-control" placeholder="batman 3"
-                aria-describedby="srcHlper" value="{{'src'}}">
-            <small id="srcHlper" class="text-muted">Add the ComicBook src here</small>
+            <label for="thumb" class="form-label">ComicBook Image</label>
+            <input type="text" name="thumb" id="thumb" class="form-control" placeholder="batman 3"
+                aria-describedby="thumbHlper" value="{{'thumb'}}">
+            <small id="thumbHlper" class="text-muted">Add the ComicBook src here</small>
         </div>
 
         <div class="mb-3">

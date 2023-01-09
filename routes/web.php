@@ -14,9 +14,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-// Route::get('/', function () {
-//     return view('admin.comics.index');
-// });
-
+Route::get('/', [ComicController::class, 'index'])->name('index');
 
 Route::resource('admin/comics', ComicController::class);
